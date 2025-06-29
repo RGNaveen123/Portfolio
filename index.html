@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naveen Manoj – Portfolio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- ===== Base Styles (Vanilla CSS) ===== -->
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header>
+    <div class="container nav">
+      <a href="#hero"></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+<section class="section hero" id="hero">
+  <div class="container" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 2rem;">
+    <div class="hero-content">
+      <h1>Hi, I’m Naveen</h1>
+      <p>Software developer passionate about intuitive design, Python, and building immersive digital experiences.</p>
+      <div class="hero-buttons">
+        <a class="btn" href="#contact" style="background: #a78bfa; color: white;">Contact Me</a>
+        <a class="btn" href="assets/NaveenManojResume.pdf" style="border: 2px solid #a78bfa; color: white;">Download Resume</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="assets/avatar.jpg" alt="Naveen Manoj">
+    </div>
+  </div>
+</section>
+
+
+  <!-- ===== About ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p style="max-width:720px;margin-top:1rem;">
+        I’m a Computer Science graduate who loves turning ideas into meaningful software. My journey spans from augmented reality prototypes to AI‑driven research. When I’m not coding, you’ll find me reading manga or learning something new.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-list" style="margin-top:2rem;">
+        <div class="skill" style="--level:90%;">
+          <h3>Python</h3>
+          <div class="skill-bar"></div>
+        </div>
+        <div class="skill" style="--level:80%;">
+          <h3>C</h3>
+          <div class="skill-bar"></div>
+        </div>
+        <div class="skill" style="--level:75%;">
+          <h3>Unity 3D</h3>
+          <div class="skill-bar"></div>
+        </div>
+        <div class="skill" style="--level:70%;">
+          <h3>Web Fundamentals</h3>
+          <div class="skill-bar"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="card-grid" style="margin-top:2rem;">
+        <!-- Card 1 -->
+        <article class="card">
+          <img class="card-img" src="assets/ar_project.png" alt="AR Visualization" style="object-fit: contain; background-color: #fff" />
+          <div class="card-body">
+            <h3>Architectural Visualization (AR)</h3>
+            <p>An AR application built with Unity & AR Core to bring building designs to life and aid decision‑making in construction.</p>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="card">
+            <a href="https://rgnaveen.itch.io/flashtiles" target="_blank">
+                <img class="card-img" src="assets/flashtiles_preview.png" alt="FlashTiles Memory Game" style="object-fit: cover; height: 200px; width: 100%; border-radius: 8px 8px 0 0;" />
+            </a>
+            <div class="card-body">
+                <h3>FlashTiles – Memory Puzzle Game</h3>
+                <p>A level-based memory game built with Unity. Players watch flashing tiles and must recall their positions, with increasing difficulty. Features dynamic grid scaling, sound effects, checkpoint levels, and adaptive lives system.</p>
+                <a href="https://rgnaveen.itch.io/flashtiles" target="_blank" class="btn alt" style="margin-top: 1rem;">Play on itch.io</a>
+            </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="card">
+            <img class="card-img" src="assets/drone.png" alt="Malicious Drone Detection" />
+            <div class="card-body">
+                <h3>Malicious Drone Detection</h3>
+                <p>Research on using YOLOv5 for real-time drone detection and identification for defense and surveillance. This project was presented at an IEEE conference and is available on IEEE Xplore.</p>
+                <a href="https://ieeexplore.ieee.org/abstract/document/10404797/" target="_blank" class="btn alt" style="margin-top: 1rem;">View Research</a>
+            </div>
+        </article>
+        <!-- Card 4 -->
+        <article class="card">
+        <div class="card-body">
+            <h3>Anti‑Theft Mobile Case</h3>
+            <p>A compact Arduino-based hardware project designed to prevent phone theft. Utilizes motion sensors and alarm triggers to alert users during suspicious activity. Built and tested using Thinkercad simulation.</p>
+        </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Experience & Education ===== -->
+  <section class="section" id="experience">
+    <div class="container" style="display:grid;gap:3rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));">
+      <div>
+        <h2>Experience</h2>
+        <div class="timeline" style="margin-top:2rem;">
+          <div class="timeline-item">
+            <h4>Intern – Kerala Development & Innovation Strategic Council</h4>
+            <span>Jun 2023 – Jul 2023</span>
+            <p style="margin-top:.3rem;color:var(--subtext);">Worked on fostering an innovation ecosystem under YIP 5.0 across campuses.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2>Education</h2>
+        <div class="timeline" style="margin-top:2rem;">
+          <div class="timeline-item">
+            <h4>B.Tech – Computer Science & Engineering</h4>
+            <span>2020 – 2024 | CGPA 7.73 | SIMAT</span>
+          </div>
+          <div class="timeline-item">
+            <h4>12th Grade – Computer Science</h4>
+            <span>2019 – 2020 | 77.2%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <form class="contact-form" style="margin-top:2rem;">
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit" class="btn" style="grid-column:1/3;width:max-content;">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <ul>
+      <li><a href="https://github.com/RGNaveen123" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/naveen-manoj/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="mailto:naveenmanoj2502@gmail.com">Email</a></li>
+    </ul>
+    <p>© <span id="year"></span> Naveen Manoj. All rights reserved.</p>
+  </footer>
+
+  <!-- ===== Scripts ===== -->
+  <script>
+    // ===== Dynamic Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ===== Theme Handling =====
+    const root = document.documentElement;
+    const themeToggle = document.getElementById('theme-toggle');
+
+    // Initialize theme based on saved value or system preference
+    const getPreferredTheme = () => {
+      const stored = localStorage.getItem('theme');
+      if(stored)return stored;
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    };
+    const applyTheme = (theme) => {
+      root.setAttribute('data-theme', theme);
+      themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+    };
+    let currentTheme = getPreferredTheme();
+    applyTheme(currentTheme);
+
+    themeToggle.addEventListener('click', ()=>{
+      currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      applyTheme(currentTheme);
+      localStorage.setItem('theme', currentTheme);
+    });
+
+    // ===== Skill bar polyfill for css var shade() if browser doesn't support
+    const shade = (color,percent)=>color; // placeholder
+  </script>
+</body>
+</html>
